@@ -1,0 +1,335 @@
+{
+  "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "editor.formatOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "debug.openDebug": "openOnDebugBreak",
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+
+  "[xml]": {
+    "editor.autoClosingBrackets": "never",
+    "files.trimFinalNewlines": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.java",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    // Automatically format code on save and during typing of certain characters
+    // (like `;` and `}`).
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+
+    // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+    "editor.rulers": [80],
+
+    // Disables built-in highlighting of words that match your selection. Without
+    // this, all instances of the selected text will be highlighted, interfering
+    // with Dart's ability to highlight only exact references to the selected variable.
+    "editor.selectionHighlight": false,
+
+    // By default, VS Code prevents code completion from popping open when in
+    // "snippet mode" (editing placeholders in inserted code). Setting this option
+    // to `false` stops that and allows completion to open as normal, as if you
+    // weren't in a snippet placeholder.
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+    // By default, VS Code will pre-select the most recently used item from code
+    // completion. This is usually not the most relevant item.
+    //
+    // "first" will always select top item
+    // "recentlyUsedByPrefix" will filter the recently used items based on the
+    //     text immediately preceding where completion was invoked.
+    "editor.suggestSelection": "first",
+
+    // Allows pressing <TAB> to complete snippets such as `for` even when the
+    // completion list is not visible.
+    "editor.tabCompletion": "onlySnippets",
+
+    // By default, VS Code will populate code completion with words found in the
+    // current file when a language service does not provide its own completions.
+    // This results in code completion suggesting words when editing comments and
+    // strings. This setting will prevent that.
+    "editor.wordBasedSuggestions": "off"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-ExecutionPolicy", "Bypass"]
+    }
+  },
+  //Font
+  "editor.fontFamily": "Hack Nerd Font",
+  "chat.editor.fontFamily": "Hack Nerd Font",
+  "debug.console.fontFamily": "Hack Nerd Font",
+  "editor.codeLensFontFamily": "Hack Nerd Font",
+  "notebook.output.fontFamily": "Hack Nerd Font",
+  "markdown.preview.fontFamily": "Hack Nerd Font",
+  "editor.inlayHints.fontFamily": "Hack Nerd Font",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "300",
+  //UI
+  "editor.minimap.enabled": false,
+  "window.commandCenter": false,
+  "editor.scrollbar.vertical": "auto",
+  "window.titleBarStyle": "custom",
+  "editor.scrollbar.horizontal": "auto",
+
+  //APC
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 28
+  },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 12,
+      "y": 10
+    }
+  },
+  "apc.font.family": "Hack Nerd Font",
+  "apc.monospace.font.family": "Hack Nerd Font",
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 20,
+    "fontSize": 12
+  },
+  "workbench.sideBar.location": "right",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "window.zoomLevel": 0.75,
+
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false,
+    "go": true
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "editor.lineNumbers": "relative",
+
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-c>": true,
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-w>": false
+  },
+  "vim.overrideCopy": true,
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+  "vim.autoindent": true,
+  "vim.surround": true,
+  "vim.searchMatchColor": "green",
+  "vim.commentray": true,
+
+  "vim.searchMatchTextColor": "white",
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#8FBCBB", "#000"],
+  "vim.statusBarColors.insert": ["#BF616A", "#000"],
+  "vim.statusBarColors.visual": ["#B48EAD", "#000"],
+  "vim.statusBarColors.visualline": ["#B48EAD", "#000"],
+  "vim.statusBarColors.visualblock": ["#A3BE8C", "#000"],
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "terminal.external.linuxExec": "tmux",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#000",
+    "statusBar.debuggingForeground": "#000",
+    "editor.background": "#121212"
+  },
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
+    },
+    {
+      "before": ["leader", "f", "t"],
+      "commands": ["workbench.action.togglePanel"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    // splits
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    {
+      "before": ["leader", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["leader", "n", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["leader", "g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q!"]
+    },
+
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "leader"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    // Move selected lines while staying in visual mode
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    // toggle comment selection
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["leader", "f"],
+      "commands": ["editor.fold"]
+    },
+    {
+      "before": ["leader", "u"],
+      "commands": ["editor.unfold"]
+    }
+  ],
+  "breadcrumbs.enabled": false,
+  "nxConsole.showNodeVersionOnStartup": false,
+  "workbench.editor.enablePreview": false,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
+  "redhat.telemetry.enabled": false,
+  "xml.format.enforceQuoteStyle": "preferred",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "go.toolsManagement.autoUpdate": true
+}
