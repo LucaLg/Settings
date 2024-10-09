@@ -1,0 +1,84 @@
+" Enable some VS Code-like settings
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" Use system clipboard
+set clipboard+=unnamed
+
+" Enable surround plugin (similar to vim-surround)
+set surround
+
+" Enable commentary plugin (similar to vim-commentary)
+set commentary
+
+" Enable relative line numbers
+set number
+set relativenumber
+
+" Enable incremental search
+set incsearch
+
+" Highlight yanked text
+set highlightedyank
+
+" Set leader key to space
+let mapleader = " "
+
+" Normal mode mappings
+nnoremap <S-h> :action PreviousTab<CR>
+nnoremap <S-l> :action NextTab<CR>
+nnoremap <leader>v :action SplitVertically<CR>
+nnoremap <leader>s :action SplitHorizontally<CR>
+nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>ne :action GotoNextError<CR>
+nnoremap <leader>gr :action FindUsages<CR>
+nnoremap <leader>h :action PrevSplitter<CR>
+nnoremap <leader>j :action NextSplitter<CR>
+nnoremap <leader>k :action PrevSplitter<CR>
+nnoremap <leader>l :action NextSplitter<CR>
+nnoremap <leader>w :write<CR>
+nnoremap <leader>q :q<CR>
+nnoremap [d :action GotoPreviousError<CR>
+nnoremap ]d :action GotoNextError<CR>
+nnoremap <leader>ca :action ShowIntentionActions<CR>
+nnoremap <leader><leader> :action GotoFile<CR>
+nnoremap <leader>p :action ReformatCode<CR>
+nnoremap K :action QuickJavaDoc<CR>
+
+" Visual mode mappings
+vnoremap < <gv
+vnoremap > >gv
+vnoremap J :action MoveLineDown<CR>
+vnoremap K :action MoveLineUp<CR>
+vnoremap <leader>c :action CommentByLineComment<CR>
+vnoremap <leader>f :action CollapseSelection<CR>
+vnoremap <leader>u :action ExpandRegion<CR>
+
+" Enable IdeaVim plugins
+set easymotion
+set highlightedyank
+set nerdtree
+set surround
+set multiple-cursors
+set commentary
+set ReplaceWithRegister
+
+" Escape insert mode with 'jk'
+inoremap jk <Esc>
+
+" Search settings
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" Set timeout for key sequences
+set timeoutlen=1000
+
+" Enable mouse support
+set mouse=a
+
+" Keep cursor centered when scrolling
+set scrolloff=999
